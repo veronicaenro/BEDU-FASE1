@@ -5,6 +5,8 @@ body{
 h1{
     color: #025157;
     text-align: center;
+    font-family: 'Alegreya', serif;
+    font-size: 50px;
 }
 
 p{
@@ -25,10 +27,6 @@ button{
     height: 45px;
 }
 
-li {
-    display:inline;
-    margin:0 25px;
-}
 
 .header > * { /*  > * todo lo que haya dentro del bloque header (hijos) llevara este estilo*/
     display: inline-block;
@@ -51,6 +49,11 @@ li {
     color:#025157;
     text-align: left;
     font-weight: 600;
+}
+
+.navbar li {
+    display:inline;
+    margin:0 25px;
 }
   
 .actions{
