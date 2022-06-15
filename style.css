@@ -18,3 +18,66 @@ button{
     background-color: #025157;
 }
 
+.header {
+    margin: 40px 20px 0;
+    font-size: 0;
+    font-family: sans-serif;
+    height: 45px;
+}
+
+li {
+    display:inline;
+    margin:0 25px;
+}
+
+.header > * { /*  > * todo lo que haya dentro del bloque header (hijos) llevara este estilo*/
+    display: inline-block;
+    font-size: 16px;
+    line-height: 45%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.logo{
+    width: 15%;
+}
+
+.logo > img{
+    width: 15%;
+}
+
+.navbar{
+    width: 70%;
+    color:#025157;
+    text-align: left;
+    font-weight: 600;
+}
+  
+.actions{
+    width: 15%;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.actions > *{
+    margin:0 10px;
+}
+
+.actions a {
+    color: #67b54b;
+}
+
+.actions button{
+    color:#fff;
+    background-color: #67b54b;
+    padding: 14px 12px;
+    border:none;
+    border-radius: 5px;
+}
+
+.main{
+    margin-top:140px;
+    text-align: center;
+}
+
