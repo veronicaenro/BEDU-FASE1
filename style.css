@@ -20,6 +20,7 @@ button{
     background-color: #025157;
 }
 
+
 .header {
     margin: 40px 20px 0;
     font-size: 0;
@@ -34,6 +35,14 @@ button{
     line-height: 45%;
     height: 100%;
     vertical-align: middle;
+}
+
+.fixed-header{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color: #fffbf7;
 }
 
 .logo{
@@ -80,7 +89,55 @@ button{
 }
 
 .main{
-    margin-top:140px;
+    margin-top:250px;
     text-align: center;
+}
+
+h2{
+    color: #025157;
+    font-family: 'Alegreya', serif;
+    font-size: 42px;
+}
+
+p.content-text{
+    color: #343434;
+}
+
+.form-button{
+    color: #fff;
+    background-color: #025157;
+    padding: 7px 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border:none;
+}
+
+.input-fields{
+    padding: 6px 20px;
+    border: 1px solid #b6b6b6;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.promo{
+    display:flex;
+    width:70%;
+    margin:100px auto;
+    align-items: center;
+}
+
+.publish{
+    margin-left: 40px;
+}
+
+.video-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img.arrow{
+    margin-top:15px;
+    width: 15%;
 }
 
