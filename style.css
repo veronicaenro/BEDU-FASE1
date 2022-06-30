@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 body{
     background-color: #fffbf7;
 }
@@ -18,6 +24,7 @@ p{
 button{
     color: #fff;
     background-color: #025157;
+    border:none;
 }
 
 
@@ -45,7 +52,7 @@ button{
     background-color: #fffbf7;
 }
 
-.logo{
+.logo {
     width: 15%;
 }
 
@@ -54,10 +61,10 @@ button{
 }
 
 .navbar{
-    width: 70%;
     color:#025157;
-    text-align: left;
+    text-align: center;
     font-weight: 600;
+    background-color: #fffbf7;
 }
 
 .navbar li {
@@ -66,8 +73,7 @@ button{
 }
   
 .actions{
-    width: 15%;
-    text-align: left;
+    text-align: right;
     font-size: 14px;
     font-weight: 600;
 }
@@ -98,10 +104,16 @@ h2{
     font-family: 'Alegreya', serif;
     font-size: 42px;
 }
+.main > p{
+    margin-top:15px;
+    font-size:16px;
+}
 
 p.content-text{
     color: #343434;
+    font-size: 18px;
 }
+
 
 .form-button{
     color: #fff;
@@ -112,11 +124,29 @@ p.content-text{
     border:none;
 }
 
+.main form {
+    margin-top:25px;
+}
+
+.main form > * {
+    font-size:18px;
+    padding:15px 15px;
+}
+
+.main .form-button{
+    margin-left:-10px;
+    border: 1px solid #025157;
+}
+
 .input-fields{
     padding: 6px 20px;
     border: 1px solid #b6b6b6;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+}
+
+.banner > img{
+    width:85%;
 }
 
 .promo{
@@ -130,7 +160,21 @@ p.content-text{
     margin-left: 40px;
 }
 
-.video-container{
+.publish form div{
+    flex-direction: row;
+}
+
+.publish form div > * {
+    font-size:18px;
+    padding:15px 15px;
+}
+
+.publish form div .form-button{
+    margin-left:-10px;
+    border: 1px solid #025157;
+}
+
+.explanatory-video{
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -142,23 +186,42 @@ img.arrow{
 }
 
 .features{
+    margin-top:5%;
     background-color: #025157;
-    padding:80px 120px;
-    height:auto;
+    padding: 5% 10%;
+   /* height:660px;*/
     display:grid;
-    grid-template: repeat(2,1fr)/repeat(2,1fr);
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
     gap: 35px;
 }
 
-.feature-card{
+.features .feature-card{
+    margin-bottom:30px;
+    margin-left:15px;
+    margin-right:15px;
     background-color:#fff;
+    border: 1px solid #dadada;
     border-radius: 5px;
     display: flex;
-    /*margin-top:20px;
-    margin-left:20px;*/
+    align-items: center;
+    overflow:hidden;
 }
 
-.features h3{
+.features .feature-card .feature-content{
+    padding:30px 20px 40px 40px;
+    flex: 2;
+}
+
+.features .feature-card .feature-content > *{
+    margin-bottom: 1rem;
+    margin-top:0;
+}
+
+.features .feature-card .feature-content img {
+    width: 50px;
+  }
+
+.features .feature-card .feature-content h3{
     color: #343434;
     font-size: 24px;
     font-weight:500;
@@ -166,19 +229,33 @@ img.arrow{
     font-family:sans-serif;
 }
 
-.features p{
-    color: #b6b6b6;
-    font-size: 17px;
+.features .feature-card .feature-content p{
+    color: #7e7e7e;
+    font-size: 16px;
     font-weight:500;
     font-family:sans-serif;
 }
 
-.features a{
+.features .feature-card .feature-content a{
     color: #67b54b;
-    font-size: 18px;
+    font-size: 16px;
     font-weight:700;
     text-decoration: none;
     font-family:sans-serif;
+}
+
+.features .feature-card .feature-image {
+    flex: 1;
+    width: 40%;
+    position: relative;
+    right: -50px;
+    height: 80%;
+}
+  
+.features .feature-card .feature-image figure,
+.features .feature-card .feature-image img {
+    margin-top: 0;
+    height: 100%;
 }
 
 .feature-info{
@@ -207,40 +284,417 @@ img.arrow{
    margin: 40px 0;
 }
 
-.testimonials{
+.success-stories {
     background-color: #a1d683;
-    display:flex;
-    /*width:70%;*/
-    padding:100px 200px;
+    padding: 5% 15%;
+    display: flex;
     align-items: center;
-}
-
-.testimonials-overview{
-    margin-right:80px; 
-}
-
-.testimonials-container{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.btn{
-    color: #fff;
-    background-color: #025157;
-    padding: 20px 20px;
-    border-radius: 10px;
-    border:none;
-    font-size:16px;
+    justify-content: space-around;
+   /* flex-direction: column;*/
+  }
+  
+  .success-stories .overview {
+    flex: 2;
+    padding-right: 100px;
+  }
+  
+  .success-stories .overview h2 {
+    font-family: "Alegreya", serif;
+    font-size: 51px;
+    line-height: 61px;
+    color: #025157;
+  }
+  
+  .success-stories .overview p {
+    color: #343434;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .success-stories .overview button {
+    font-size: 14px;
+    padding: 12px 12px 6px 12px;
+    border-radius: 8px;
+    height: 45px;
     font-weight: 600;
+    margin-left: 0;
+  }
+  
+  .success-stories .overview img {
+    width: 500px;
+    max-width: 100%;
+  }
+  
+  .success-stories .stories-carousel {
+    flex: 1;
 }
 
-.testimonials-overview img{
-    margin-top:15px;
-    width:100%;
+  .success-stories .card {
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    min-height:600px;
+    border-radius: 10px;
 }
 
-.testimonials-container img{
-    margin-top:15px;
-    width:100%;
+.success-stories .card img {
+    max-height: 30vh;
+    object-fit: cover;
+  }
+
+
+/* Con object-fit, hacemos que la imagen se ajuste a la medida de su contenedor y limitamos su alto */
+.success-stories .card img {
+    max-height: 30vh;
+    object-fit: cover;
+  }
+  
+  /* Agregamos position: relative para recibir un elemento con position:absolute más adelante */
+  .success-stories .card .card-body {
+    max-width: 370px;
+    width: 100%;
+    position: relative;
+    padding: 40px 1rem 1rem;
+  }
+  
+  /* Estos son los estilos para textos y acomodo de elementos */
+  .success-stories .card .card-body h4 {
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+    font-family: "Slabo 27px", serif;
+  }
+  
+  .success-stories .card .card-body h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .success-stories .card .card-body .card-results {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .success-stories .card .card-body .card-results img {
+    width: 26px;
+    margin-right: 20px;
+  }
+  
+  .success-stories .card .card-body .card-results p {
+    margin: 0;
+  }
+  
+  .success-stories .card .card-footer button {
+    display: block;
+    margin-left: 0;
+    border-radius: 5px;
+    font-size: 13;
+    font-weight: 600;
+    padding: 12px 20px;
+    width: 100%;
+    background-color: #025157;
+    color: #fff;
+    border: none;
+  }
+  
+  .success-stories .card .card-footer {
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+  }
+  
+  /* Aqui hacemos un círculo con CSS! Este se posicionará en el margen superior de .card-body */
+  .success-stories .card .card-body .card-circle {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:-45px;
+    right: 20px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  /* Cada círculo tiene su propio color. Verifica qué significa este selector: .card-circle.everly */
+  .success-stories .card .card-body .card-circle.everly {
+    background-color: #f9da73;
+    border: 5px solid #f9da73;
+  }
+
+  .success-stories .card .card-body .card-circle.summit {
+    background-color: #81d742;
+    border: 5px solid #81d742;
+  }
+  
+  .success-stories .card .card-body .card-circle.mambe {
+    background-color: #ef7179;
+    border: 5px solid #ef7179;
+  }
+  
+  /* Los círculos deben recibir la imagen y ajustarla al tamaño */
+  .success-stories .card .card-body .card-circle.everly img,
+  .success-stories .card .card-body .card-circle.summit img,
+  .success-stories .card .card-body .card-circle.mambe img {
+    object-fit: contain;
+    width: 100%;
+  }
+
+/*** START - PostWork - How does it work? ***/
+.how-does-it-work {
+    background-color: #fffbf7;
+    padding: 5% 10%;
+    text-align: center;
 }
+
+.how-does-it-work button{
+    font-size: 17px;
+    font-weight: 600;
+    padding-left:25px;
+    padding-right:25px;
+    height: 45px;
+    margin-left: 0;
+    border-radius: 8px;
+    margin-top: 6px;
+}
+
+.how-does-it-work .steps {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.how-does-it-work .steps .card-step {
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.how-does-it-work .steps .card-step .card-step-image {
+    position: relative;
+    height: 350px;
+}
+
+.how-does-it-work .steps .card-step .card-step-image .card-step-bg {
+    width: 100%;
+    height: 100%;
+}
+
+.how-does-it-work .steps .card-step .card-step-image .card-step-icon {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 21px;
+}
+
+.how-does-it-work .steps .card-step .card-step-body {
+    padding: 25px;
+}
+
+.how-does-it-work .steps .card-step .card-step-body h3 {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: "Alegreya", serif;
+    color: #025157;
+    font-weight: 400;
+    text-align: center;
+}
+
+.how-does-it-work .steps .card-step .card-step-body p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #46484c;
+    font-weight: 400;
+    height: 85px;
+    margin-bottom: 46px;
+
+}
+
+.how-does-it-work .steps .card-step .card-step-body a {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/*** END - Postwork ***/
+
+/******* Responsive Media Querys *******/
+
+
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+    /*.navbar,
+    .actions {
+        display: none;
+    }*/
+
+    .logo {
+        width: 40%;
+    }
+    
+    .main{
+        margin-top:100px;
+    }  
+
+    .main form {
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    .main form input{
+        width:60%;
+        font-size: 16px;
+    }
+
+    .main form button{
+        width:40%;
+        font-size: 16px;
+    }
+  
+    .logo{
+        width: 40%;
+    }
+
+    h1{  
+        font-size: 40px;
+    }
+    .banner > img{
+        width:100%;
+    }
+    .publish > form{
+        flex-direction: column;
+    }
+    .publish > form > div{
+        height:50px;
+        margin-top:10px;
+    }
+    .publish > form > div > input {
+        width:60%;
+        font-size: 14px;
+    }
+
+    .publish > form > div > button {
+        width:40%;
+        font-size: 14px;
+    }
+
+    .promo{
+        flex-direction: column;
+        max-width: 95%;
+        width:90%;
+    }
+
+    .explanatory-video > video{
+        width:100%;
+    }
+
+    .publish{
+        margin-top:10px;
+        margin-left: 10px;
+    }
+    .publish > h3{
+        font-size:25px;
+        line-height: 1.2;
+    }
+    .features{
+        grid-template: repeat(4,1fr) / 1fr;
+        padding-left:0;
+        padding-right: 0;
+        gap: 10px;
+        padding-top: 15%;
+    }
+
+    .feature-image{
+        display: none;
+    }
+
+    .success-stories {
+        flex-direction: column;
+        padding: 5% 15px;
+    }
+
+    .success-stories .overview{
+        padding: 15px;
+    }
+
+    .how-does-it-work .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .how-does-it-work .steps .card-step {
+        margin-left: unset;
+        margin-right: unset;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        position: relative;
+    }
+
+    .how-does-it-work .steps .card-step .card-step-image {
+        position: initial;
+        height: unset;
+    }
+
+    .how-does-it-work .steps .card-step .card-step-body h3 {
+        text-align: left;
+        margin-top: 30px;
+    }
+
+  }
+  
+  /** dispositivos pequeños en vista landscape (horizontal) */
+  @media (min-width: 576px) and (max-width: 767px) {
+    .how-does-it-work .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .how-does-it-work .steps .card-step {
+        margin-left: unset;
+        margin-right: unset;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        position: relative;
+    }
+
+    .how-does-it-work .steps .card-step .card-step-image {
+        position: initial;
+        height: unset;
+    }
+
+    .how-does-it-work .steps .card-step .card-step-body h3 {
+        text-align: left;
+        margin-top: 30px;
+    }
+  }
+  
+  /** dispositivos medianos (tablets) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .success-stories {
+        flex-direction: column;
+        padding: 5% 15px;
+      }
+  }
+  
+  /** dispositivos grandes (desktops) */
+  @media (min-width: 992px) and (max-width: 1199px) {
+  
+  }
+  
+  /** dispositivos extra grandes (monitores grandes, tvs) */
+  @media (min-width: 1200px) {
+  
+  }
