@@ -1,0 +1,19 @@
+// global.scss
+
+// Colores
+
+$dark-green-title:#025157;
+$dark-green-text: #135359;
+$white: #ffffff;
+$light-green:#67b54b;
+$gray: #979797;
+$dark-gray: #4a4a4a;
+
+/* Fuentes */
+
+$font-title: "Alegreya", serif;
+
+%base-title{ 
+    font-family: $font-title;
+    color:$dark-green-title;
+}
