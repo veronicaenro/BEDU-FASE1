@@ -1,0 +1,22 @@
+{
+  "name": "bedu-fase1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veronicaenro/BEDU-FASE1.git"
+  },
+  "author": "Veronica Encinas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veronicaenro/BEDU-FASE1/issues"
+  },
+  "homepage": "https://github.com/veronicaenro/BEDU-FASE1#readme",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}
