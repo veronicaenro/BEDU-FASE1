@@ -1,7 +1,12 @@
 /* Fuentes */
-.blog .title {
+.blog .title, .banner-free-trial div h3 {
   font-family: "Alegreya", serif;
   color: #025157;
+}
+
+.try-it form *, .banner-free-trial div form * {
+  font-size: 18px;
+  padding: 15px 15px;
 }
 
 .blog {
@@ -71,6 +76,63 @@
   font-weight: 600;
   margin-left: 10px;
   margin-top: 15px;
+}
+
+.try-it {
+  background-color: #67b54b;
+  padding: 3%;
+}
+.try-it h2 {
+  color: #025157;
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.try-it p {
+  color: #ffffff;
+  font-size: 16px;
+}
+.try-it form {
+  height: 55px;
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-free-trial {
+  padding: 5% 10%;
+}
+.banner-free-trial .container {
+  background-color: #025157;
+  border-radius: 10px;
+  padding: 3%;
+}
+.banner-free-trial div h3 {
+  color: #ffffff;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.banner-free-trial div p {
+  color: #ffffff;
+  font-size: 20px;
+}
+.banner-free-trial div p a {
+  color: #67b54b;
+}
+.banner-free-trial div form {
+  width: 90%;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.banner-free-trial div form .input-fields {
+  width: 60%;
+}
+.banner-free-trial div form .form-button {
+  width: 40%;
+  background-color: #67b54b;
 }
 
 /*# sourceMappingURL=output.css.map */

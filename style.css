@@ -122,6 +122,8 @@ p.content-text{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border:none;
+    margin-left:-10px;
+    border: 1px solid #025157;
 }
 
 .main form {
