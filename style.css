@@ -126,6 +126,10 @@ p.content-text{
     border: 1px solid #025157;
 }
 
+.form-button:hover{
+    background-color: #67b54b;
+}
+
 .main form {
     margin-top:25px;
 }
