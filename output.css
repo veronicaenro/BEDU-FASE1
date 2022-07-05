@@ -115,7 +115,7 @@
 }
 .banner-free-trial div p {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
 }
 .banner-free-trial div p a {
   color: #67b54b;
@@ -133,6 +133,63 @@
 .banner-free-trial div form .form-button {
   width: 40%;
   background-color: #67b54b;
+}
+
+@media (max-width: 575px) {
+  .try-it {
+    padding: 6% 2%;
+  }
+  .try-it h2 {
+    color: #025157;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .try-it form {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .try-it form * {
+    font-size: 16px;
+  }
+  .try-it form .input-fields {
+    width: 55%;
+  }
+  .try-it form .form-button {
+    width: 45%;
+  }
+  .banner-free-trial {
+    padding: 6% 2%;
+  }
+  .banner-free-trial .container {
+    background-color: #025157;
+    border-radius: 10px;
+    padding: 1%;
+  }
+  .banner-free-trial div {
+    padding: 0;
+  }
+  .banner-free-trial div form {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-satart;
+  }
+  .banner-free-trial div form * {
+    font-size: 15px;
+  }
+  .banner-free-trial div form .input-fields {
+    width: 55%;
+  }
+  .banner-free-trial div form .form-button {
+    width: 45%;
+    background-color: #67b54b;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
