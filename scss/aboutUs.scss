@@ -1,0 +1,90 @@
+@use 'global' as *;
+
+.top-features{
+    margin-top: 100px;
+    margin-bottom:40px;
+    p{
+        color:$dark-gray;
+    }
+    .top-title{
+        h2{
+            @extend %base-title;
+            font-size:50px;
+        }  
+    }
+}
+
+
+.card{
+    border:none;
+    img{
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border:solid 1px #e7e7e7;
+    }
+    .card-body{
+        .card-title{
+            a{
+                text-decoration: none;
+                color:$dark-gray;
+                transition: color 0.3s ease-in-out, font-size 0.5s linear;
+            }
+            a:hover{
+                color:$light-green;
+                font-size:28px;
+            }
+        }
+        .card-text{
+            font-size:16px;
+        }
+    }
+}
+
+
+.flecha {
+    margin: 0 auto;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 15px;
+    margin-top: 80px;
+  
+    .flecha-contenedor {
+      position: relative;
+      height: 150px;
+      width: 150px;
+      margin-bottom: 15px;
+  
+      .flecha-animada {
+        position: absolute;
+        animation-name: up-and-down, alrededor;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        height: 130px;
+        width: 130px;
+  
+        img {
+          width: 130px;
+          transform: rotate(-90deg);
+        }
+      }
+    }
+  
+    @keyframes alrededor {
+      from { left: -320px; }
+      to { left: 320px; }
+    }
+  
+    @keyframes up-and-down {
+      0% {top: 0;}
+  
+      25% {top: -30px;}
+  
+      50% {top: -60px;}
+  
+      75% {top: -30px;}
+  
+      100% {top: 0;}
+    }
+  }
